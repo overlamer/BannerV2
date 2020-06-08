@@ -1,0 +1,30 @@
+ZSH_THEME="agnoster"
+
+export ZSH=$HOME/.oh-my-zsh
+
+# CASE_SENSITIVE="true"
+# HYPHEN_INSENSITIVE="true"
+# DISABLE_AUTO_UPDATE="true"
+# DISABLE_UPDATE_PROMPT="true"
+# export UPDATE_ZSH_DAYS=13
+# DISABLE_MAGIC_FUNCTIONS=true
+# DISABLE_LS_COLORS="true"
+# DISABLE_AUTO_TITLE="true"
+# ENABLE_CORRECTION="true"
+# COMPLETION_WAITING_DOTS="true"
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+plugins=(git zsh-autosuggestions)
+source $ZSH/oh-my-zsh.sh
+
+PROMPT='%(?,%{$fg[green]%},%{$fg[red]%})%$💢[$]: '
+# RPS1='%{$fg[blue]%}%~%{$reset_color%}  '
+RPS1='%{$fg[white]%}%2~$(git_prompt_info) %{$fg_bold[blue]%}%m%{$reset_color%}'
+
+ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[yellow]%}("
+ZSH_THEME_GIT_PROMPT_SUFFIX=")%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN=" "
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%} 💢%{$fg[yellow]%}"
