@@ -31,6 +31,11 @@ cat "zshrc.txt" > $HOME/.zshrc
 cat "ban.txt" >> $HOME/.zshrc
 cat "cl34r.txt" >> /data/data/com.termux/files/usr/etc/bash.bashrc
 cat "84nn3r.txt" >> $HOME/.zshrc
+mv clean ~/../usr/bin/
+cd $HOME
+cd ~/../usr/bin/
+chmod +x clean
+cd $HOME
 echo " "
 echo -e "\e[0;36m\nУспешно!!\n\nПерезапусти termux)"
 echo " "

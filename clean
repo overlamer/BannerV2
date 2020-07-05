@@ -1,0 +1,12 @@
+#!/data/data/com.termux/files/usr/bin/sh
+
+cd $HOME
+rm -rf .zshrc
+rm -rf .oh-my-zsh
+rm -rf .termux
+rm -rf .zsh-syntax-highlighting
+cd ~/../usr/etc/
+rm zshrc
+rm -rf fonts
+echo ' '
+echo 'Готово,перезапусти))'
